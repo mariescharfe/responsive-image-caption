@@ -11,7 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font: normal 100%/1.3 Georgia, sans-serif;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -22,8 +22,26 @@ body {
   margin: 0;
 }
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.text {
+  background-color: #e2e2e2;
+  padding: 1.3rem;
+}
+
 h2 {
   font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+  padding-top: .05rem;
+  padding-bottom: .05rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -31,6 +49,20 @@ h2 {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  .figure {
+    position: relative;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.4rem;
+    max-width: 20rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
   }
 
 }
